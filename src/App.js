@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
-function App() {
+import Navbar from "./Components/Pages/Navbar";
+import About from "./Components/Pages/About";
+import Profile from "./Components/Pages/Profile";
+import Footer from "./Components/Pages/Footer";
+import Experience from "./Components/Pages/Experience";
+import Projects from "./Components/Pages/Projects";
+import Contact from "./Components/Pages/Contact";
+import "./index.css";
+
+const App = () => {
+
+  let ref = useRef(null);
+  let { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <motion.section
+      style={y}
+      className="absolute top-0 right-0 h-full w-screen z-[1] items-center justify-center"
+    >
+      <div>
+        <Navbar />
+      </div>
+
+      <div className="mt-[50px]">
+        <Profile />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </div>
+      <Footer />
+    </motion.section>
   );
-}
+};
 
 export default App;
