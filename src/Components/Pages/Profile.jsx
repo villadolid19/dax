@@ -17,12 +17,12 @@ const Profile = () => {
   return (
     <section
       id="Profile"
-      className="flex-row-reverse h-auto w-full justify-center items-center gap-20 mb-12 lg:flex lg:justify-center lg:items-center lg:h-auto"
+      className="flex-row-reverse h-auto w-screen justify-center items-center gap-20 mb-12 lg:flex lg:justify-center lg:items-center lg:h-auto"
     >
       <div className="flex justify-center items-center">
         <img
           src={Pic1}
-          className="mt-24 rounded-full h-[300px] w-[300px] md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px]"
+          className="mt-24 rounded-full h-[250px] w-[250px] md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px]"
           alt="Denzel Villadolid"
         />
       </div>

@@ -22,12 +22,9 @@ const App = () => {
   return (
     <motion.section
       style={y}
-      className="absolute top-0 right-0 h-full w-screen z-[1] items-center justify-center"
+      className="absolute top-0 right-0 w-screen h-full items-center justify-center"
     >
-      <div>
-        <Navbar />
-      </div>
-
+      <Navbar />
       <div className="mt-[50px]">
         <Profile />
         <About />

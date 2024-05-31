@@ -14,7 +14,7 @@ const Footer = () => {
               className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={0}
               duration={600}
             >
               Profile
@@ -27,7 +27,7 @@ const Footer = () => {
               className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={0}
               duration={600}
             >
               About
@@ -40,7 +40,7 @@ const Footer = () => {
               className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={0}
               duration={600}
             >
               Experience
@@ -53,7 +53,7 @@ const Footer = () => {
               className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={0}
               duration={600}
               activeClass="active"
             >
@@ -67,7 +67,7 @@ const Footer = () => {
               className="list p-3 block m-4 text-gray-600 font-bold hover:underline hover:cursor-pointer hover:opacity-75"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={0}
               duration={600}
             >
               Contact

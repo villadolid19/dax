@@ -179,13 +179,13 @@ const Navbar = () => {
       </div>
 
       <div
-        className="absolute top-3 right-4 mr-6 text-slate-700 lg:hidden"
+        className="absolute top-3 right-4 mr-6 text-slate-700 lg:hidden hover:cursor-pointer"
         onClick={handleClick}
       >
         {click ? (
           <LiaTimesSolid size={30} />
         ) : (
-          <div className="flex flex-col m-0 p-0 gap-[1.5px]">
+          <div className="flex flex-col m-0 p-0 gap-[1.5px] hover:cursor-pointer">
             <div className="flex flex-row gap-[1.5px]">
               <div className="border-2 border-slate-700 w-3 h-3 rounded-[2px] rounded-tl-[4px] rounded-br-[4px]"></div>
               <div className="border-2 border-slate-700 w-3 h-3 rounded-[2px] rounded-tl-[4px] rounded-br-[4px]"></div>
