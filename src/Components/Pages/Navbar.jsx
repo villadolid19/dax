@@ -102,13 +102,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="hidden lg:flex items-center mr-40 rounded-[15px] lg:w-auto">
-        <ul className="flex gap-10">
-          <li className="w-full text-center text-xl">
+      <div class="navbar">
+        <ul class="navbar-links">
+          <li class="navbar-item">
             <Link
               id="Link"
               to="Profile"
-              className="text-gray-600 font-semibold"
+              class="link"
               spy={true}
               smooth={true}
               offset={-50}
@@ -118,11 +118,11 @@ const Navbar = () => {
               Profile
             </Link>
           </li>
-          <li className="w-full text-center text-xl">
+          <li class="navbar-item">
             <Link
               id="Link"
               to="About"
-              className="text-gray-600 font-semibold"
+              class="link"
               spy={true}
               smooth={true}
               offset={0}
@@ -132,11 +132,11 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li className="w-full text-center text-xl">
+          <li class="navbar-item">
             <Link
               id="Link"
               to="Experience"
-              className="text-gray-600 font-semibold"
+              class="link"
               spy={true}
               smooth={true}
               offset={0}
@@ -146,11 +146,11 @@ const Navbar = () => {
               Experience
             </Link>
           </li>
-          <li className="w-full text-center text-xl">
+          <li class="navbar-item">
             <Link
               id="Link"
               to="Projects"
-              className="text-gray-600 font-semibold"
+              class="link"
               spy={true}
               smooth={true}
               offset={0}
@@ -160,11 +160,11 @@ const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li className="w-full text-center text-xl">
+          <li class="navbar-item">
             <Link
               id="Link"
               to="Contact"
-              className="text-gray-600 font-semibold"
+              class="link"
               onClick={closeMenu}
               spy={true}
               smooth={true}
@@ -178,21 +178,18 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div
-        className="absolute top-3 right-4 mr-6 text-slate-700 lg:hidden hover:cursor-pointer"
-        onClick={handleClick}
-      >
+      <div class="menu-toggle" onClick={handleClick}>
         {click ? (
           <LiaTimesSolid size={30} />
         ) : (
-          <div className="flex flex-col m-0 p-0 gap-[1.5px] hover:cursor-pointer">
-            <div className="flex flex-row gap-[1.5px]">
-              <div className="border-2 border-slate-700 w-3 h-3 rounded-[2px] rounded-tl-[4px] rounded-br-[4px]"></div>
-              <div className="border-2 border-slate-700 w-3 h-3 rounded-[2px] rounded-tl-[4px] rounded-br-[4px]"></div>
+          <div class="menu-icon">
+            <div class="menu-row">
+              <div class="menu-square"></div>
+              <div class="menu-square"></div>
             </div>
-            <div className="flex flex-row gap-[1.5px]">
-              <div className="border-2 border-slate-700 w-3 h-3 rounded-[2px] rounded-tl-[4px] rounded-br-[4px]"></div>
-              <div className="border-2 border-slate-700 w-3 h-3 rounded-[2px] rounded-tl-[4px] rounded-br-[4px]"></div>
+            <div class="menu-row">
+              <div class="menu-square"></div>
+              <div class="menu-square"></div>
             </div>
           </div>
         )}
